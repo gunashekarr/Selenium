@@ -28,6 +28,7 @@ public class ByIDName extends BaseClass {
 	    WebElement dropDown = driver.findElement(By.xpath("//*[@id=\"animals\"]"));
 	    Select elm = new Select(dropDown);
 	    elm.selectByVisibleText("Baby Cat");
+	    System.out.println("Bat Cat Selected!!");
 		Thread.sleep(5000);
 	}
 
