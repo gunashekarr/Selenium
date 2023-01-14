@@ -10,20 +10,21 @@ import org.testng.annotations.Test;
 
 import Base.BaseClass;
 
-public class ByIndex extends BaseClass {
+public class ByIDName extends BaseClass {
 	
 	@Test
 	public static void Index() throws InterruptedException
 	{
 		driver.get("https://chercher.tech/practice/frames-example-selenium-webdriver");
 		driver.manage().window().maximize();
-		System.out.println(driver.getTitle());
-		driver.switchTo().frame(0);
+		int countIframes =driver.findElements(By.tagName("iframe")).size();
+        System.out.println("Number of iFrames:" + countIframes);
+		driver.switchTo().frame("frame1");
 		WebElement textBox = driver.findElement(By.xpath("/html/body/input"));
 		textBox.sendKeys("QaFactory");
 		
 		driver.switchTo().defaultContent();
-		driver.switchTo().frame(1);
+		driver.switchTo().frame("frame2");
 	    WebElement dropDown = driver.findElement(By.xpath("//*[@id=\"animals\"]"));
 	    Select elm = new Select(dropDown);
 	    elm.selectByVisibleText("Baby Cat");
