@@ -30,7 +30,6 @@ public class DeSelectAll extends BaseClass {
 		drp.selectByValue("orange");
 		drp.selectByVisibleText("Grape");
 		Thread.sleep(3000);
-		
 		drp.deselectAll();
 		Thread.sleep(3000);
 
