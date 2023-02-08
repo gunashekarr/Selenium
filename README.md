@@ -1,2 +1,2 @@
 # Selenium
-This repo consists of selenium methods implementation
+This repo consists of selenium methods implementation.
