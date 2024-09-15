@@ -13,6 +13,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 /**
  * @author 91895
  * Get Methods  = We can access these methods through webdriver instance
+ * -->All get methods works on web page, not on web elements
  * get(url) - opens the url on the browser
  * getTitle() - returns the title of the page
  * getCurrentUrl() - returns the Current Url of the page
