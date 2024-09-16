@@ -12,7 +12,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 
 /**
  * @author 91895
- *
+ * CloseSpecificBrowserWindow
  */
 public class CloseSpecificBrowserWindow {
 	public static void main(String[] args) {
