@@ -5,6 +5,7 @@ package webdriver_methods;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -47,6 +48,7 @@ get(String Url)
 public class NavigationalCommands {
 	public static void main(String[] args) throws MalformedURLException {
             WebDriver driver = new EdgeDriver();
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		    
 		    URL myURl = new URL("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		    

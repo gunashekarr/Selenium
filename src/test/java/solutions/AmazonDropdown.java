@@ -7,6 +7,7 @@ import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -26,7 +27,8 @@ public class AmazonDropdown {
 //        Select slt = new Select(dropDown);
 //        slt.selectByVisibleText("Baby");
         
-        driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']")).sendKeys("ALexa");
+       WebElement inputField=driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']"));
+        inputField.sendKeys(Keys.ENTER);
         List<WebElement> drpValues = driver.findElements(By.xpath("//div[@class='left-pane-results-container']/div/div/div[1]"));
         
         System.out.println("Autpsuggestions");
