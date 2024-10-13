@@ -33,7 +33,7 @@ public class RightClick {
 		
 		Thread.sleep(3000);
 		
-		//Handle the alert
+		//Handle the alert box
 		System.out.println("Alert Message : " + driver.switchTo().alert().getText());
 		driver.switchTo().alert().accept();
 		

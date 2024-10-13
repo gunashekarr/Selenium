@@ -25,8 +25,11 @@ public class MouseHover {
 		WebElement macLink = driver.findElement(By.xpath("//a[normalize-space()='Mac (1)']"));
 		
 		Actions act = new Actions(driver);
+		
+		//Mouse Hover
 		act.moveToElement(desktopLink).moveToElement(macLink).click().build().perform();
 		
+		//Sleep
 		Thread.sleep(3000);
 		
 		driver.close();
